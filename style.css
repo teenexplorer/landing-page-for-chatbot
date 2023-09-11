@@ -109,6 +109,30 @@ ul {
     overflow-y: scroll;
     flex-direction: column-reverse;
 }
+
+
+
+.chat-messages {
+    max-height: 300px;
+    overflow-y: auto; /* Create a scrollbar when content overflows */
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 .messages__item {
     background: orange;
     max-width: 60.6%;

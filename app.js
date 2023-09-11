@@ -67,6 +67,79 @@ class Chatbox {
             textField.value = ''
           });
     }
+    
+    addMessage(message) {
+        const chatbox = document.getElementById('chatbox');
+        const newMessage = document.createElement('div');
+        newMessage.className = 'message';
+        newMessage.textContent = message;
+        chatbox.appendChild(newMessage);
+    
+        // Scroll to the bottom with smooth behavior
+        chatbox.scrollTop = chatbox.scrollHeight;
+        chatbox.scrollTop = chatbox.scrollWidth;
+    }
+
+
+     messages = document.getElementById('messages');
+
+
+     appendMessage(sender, message) {
+        const messageElement = document.createElement("div");
+        messageElement.classList.add("message", sender.toLowerCase());
+        messageElement.innerText = `${sender}: ${message}`;
+        chatMessages.appendChild(messageElement);
+    
+        // Scroll to the bottom of the chat container
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+    }
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+ appendMessage() {
+	const message = document.getElementsByClassName('message')[0];
+  const newMessage = message.cloneNode(true);
+  messages.appendChild(newMessage);
+}
+
+getMessages() {
+	// Prior to getting your messages.
+  shouldScroll = messages.scrollTop + messages.clientHeight === messages.scrollHeight;
+  /*
+   * Get your messages, we'll just simulate it by appending a new one syncronously.
+   */
+  appendMessage();
+  // After getting your messages.
+  if (!shouldScroll) {
+    scrollToBottom();
+  }
+}
+
+scrollToBottom() {
+  messages.scrollTop = messages.scrollHeight;
+}
+
+/*scrollToBottom();
+
+setInterval(getMessages, 100);*/
+
+
 
     updateChatText(chatbox) {
         var html = '';
