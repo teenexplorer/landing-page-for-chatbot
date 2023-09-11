@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+h1 {
+    text-align: center;
+}
+body {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    font-size: 100%;
+    background-image: linear-gradient(blue,black);
+}
+
+
+
+/*body {
+    background-image: url('https://www.allianzgi.com/-/media/allianzgi/globalagi/hero/insights/sustainability-blog/1920x980-carbon-trading-time-for-change.jpg?rev=86b81700d81547ce95bcf9dbbed99bd3&h=980&w=1920&la=en&hash=5B2D8314F4370B485C362B50DC60DC94');
+    background-repeat: no-repeat; /* Prevent image from repeating */
+    /*background-size: 100% auto; /* Adjust the size as needed */
+    /*background-position: center center; /* Center the image horizontally and vertically */
+/*} */
+
+
+
+
+
+
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Style the panel bar */
+.panel-bar {
+    background-color: #333; /* Background color of the panel bar */
+    color: white; /* Text color of the links */
+    padding: 10px 0; /* Add some padding to the top and bottom */
+    text-align: center; /* Center the text horizontally */
+}
+
+/* Style the panel bar links */
+.panel-bar ul {
+    display: flex; /* Make the list items flex containers */
+    justify-content: center; /* Center the list items horizontally */
+}
+
+.panel-bar li {
+    margin: 0 20px; /* Add spacing between list items */
+}
+
+.panel-bar a {
+    text-decoration: none; /* Remove underline from links */
+    color: white; /* Text color of the links */
+    font-weight: bold; /* Make the text bold */
+    font-size: 18px; /* Adjust the font size as needed */
+}
+
+/* Hover effect for links */
+.panel-bar a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+
+
+
+
+
+
+
+
+
+
+.chatbox {
+    height: 50%;
+    margin: auto;
+    display: flex;
+    width: 50%;
+    padding: 140px;
+}
+
+.chatbox--active {
+    transform: translateY(-40px);
+    z-index: 123456;
+    opacity: 1;
+
+}
+.chatbox__button {
+    text-align: right;
+}
+.send__button {
+    padding: 6px;
+    background: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+.chatbox__header {
+    position: sticky;
+    top: 0;
+    background: rgb(33, 196, 199);
+}
+.chatbox__messages {
+    margin-top: auto;
+    display: flex;
+    overflow-y: scroll;
+    flex-direction: column-reverse;
+}
+.messages__item {
+    background: orange;
+    max-width: 60.6%;
+    width: fit-content;
+}
+.messages__item--operator {
+    margin-left: auto;
+}
+
+.messages__item--visitor {
+    margin-right: auto;
+}
+.chatbox__footer {
+    position: sticky;
+    bottom: 0;
+}
+.chatbox__support {
+    background: rgb(246, 236, 236);
+    height: 450px;
+    width: 350px;
+    box-shadow: 0px 0px 15px rgb(255, 251, 251);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.chatbox__header {
+    background: var(--primaryGradient);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 15px 20px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    box-shadow: var(--primaryBoxShadow);
+}
+
+.chatbox__image--header {
+    margin-right: 10px;
+}
+
+.chatbox__heading--header {
+    font-size: 1.2rem;
+    color: rgba(10, 10, 10, 0.968);
+}
+.chatbox__description--header {
+    font-size: .9rem;
+    color: black;
+}
+
+/* Messages */
+.chatbox__messages {
+    padding: 0 20px;
+}
+
+.messages__item {
+    margin-top: 10px;
+    background: black;
+    padding: 8px 12px;
+    max-width: 70%;
+}
+.messages__item--visitor,
+.messages__item--typing {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.messages__item--operator {
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    background: var(--primary);
+    color: black;
+}
+
+/* FOOTER */
+.chatbox__footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 20px;
+    background: var(--secondaryGradient);
+    box-shadow: var(--secondaryBoxShadow);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    margin-top: 20px;
+}
+.chatbox__footer input {
+    width: 80%;
+    border: none;
+    padding: 10px 10px;
+    border-radius: 30px;
+    text-align: left;
+}
+
+.chatbox__send--footer {
+    color:red;
+}
+
+.chatbox__button button,
+.chatbox__button button:focus,
+.chatbox__button button:visited {
+    padding: 10px;
+    background:violet;
+    border: none;
+    outline: none;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 50px;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+
