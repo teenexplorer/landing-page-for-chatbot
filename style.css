@@ -36,9 +36,9 @@ ul {
 
 /* Style the panel bar */
 .panel-bar {
-    background-color: #333; /* Background color of the panel bar */
-    color: white; /* Text color of the links */
-    padding: 10px 0; /* Add some padding to the top and bottom */
+    background-color: white; /* Background color of the panel bar */
+    color: red; /* Text color of the links */
+    padding: 20px 0; /* Add some padding to the top and bottom */
     text-align: center; /* Center the text horizontally */
 }
 
@@ -49,12 +49,26 @@ ul {
 }
 
 .panel-bar li {
-    margin: 0 20px; /* Add spacing between list items */
+    margin:  20px; 
 }
+
+.panel-bar ul li {
+    margin-right: 20px; /* Adjust the value as needed */
+    display: inline; /* Ensure <li> elements are displayed inline */
+    padding: 20px 150px;
+}
+
+
+.panel-bar ul li:last-child {
+    margin-right: 20;
+}
+
+
+
 
 .panel-bar a {
     text-decoration: none; /* Remove underline from links */
-    color: white; /* Text color of the links */
+    color: red; /* Text color of the links */
     font-weight: bold; /* Make the text bold */
     font-size: 18px; /* Adjust the font size as needed */
 }
