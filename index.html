@@ -4,9 +4,17 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Coal Mining</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coal Mining</title><style>
+        #page-title {
+            color: white; /* Change 'green' to the desired color */
+        }
+    </style>
+
 </head>
+
 <body>
+    <h1 id="page-title">Coal Mining Bot</h1>
     <nav class="panel-bar">
         <ul>
             <li><a href="#home">Home</a></li>
@@ -16,14 +24,7 @@
         </ul>
     </nav>
 
-    <header>
-        <nav class="panel-bar">
-            <div class="centered-icon">
-                <img src="your-icon-image.png" alt="Icon">
-            </div>
-        </nav>
-    </header>
-
+    
 
 <div class="container">
     <div class="chatbox">
@@ -44,12 +45,23 @@
                 <input type="text" placeholder="Write a message...">
                 <button class="chatbox__send--footer send__button">Send</button>
             </div>
+            <button onclick="clearChat()">Clear Chat</button>
         </div>
         <div class="chatbox__button">
-            <button><img src="./images/chatbox-icon.svg" /></button>
+            <button><img src="./images/chatbox-icon.svg" alt="Description of the image icon">
+                Click on me for Chat Support</button>
         </div>
     </div>
 </div>
+
+   
+
+<script>
+    function clearChat() {
+        var chatBox = document.getElementById('chatbox__support');
+        chatBox.innerHTML = ''; // Clear the chat box by setting its innerHTML to an empty string
+    }
+</script>
 
     <script src="./app.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll-polyfill/0.4.0/smoothscroll.min.js"></script>

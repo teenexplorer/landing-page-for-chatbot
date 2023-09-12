@@ -93,7 +93,9 @@ class Chatbox {
         // Scroll to the bottom of the chat container
         chatMessages.scrollTop = chatMessages.scrollHeight;
     }
-    
+
+
+
     
     
     
