@@ -10,7 +10,8 @@ body {
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
     font-size: 100%;
-    background-image: linear-gradient(blue,black);
+    background: black;
+    /*background: linear-gradient(to right, #a600ff00, #001100ec); */
 }
 
 
@@ -21,6 +22,16 @@ body {
     /*background-size: 100% auto; /* Adjust the size as needed */
     /*background-position: center center; /* Center the image horizontally and vertically */
 /*} */
+
+*, html {
+    --primaryGradient: linear-gradient(93.12deg, #581B98 0.52%, #9C1DE7 100%);
+    --secondaryGradient: linear-gradient(268.91deg, #581B98 -2.14%, #9C1DE7 99.69%);
+    --primaryBoxShadow: 0px 10px 15px rgba(0, 0, 0, 0.1);
+    --secondaryBoxShadow: 0px -10px 15px rgba(0, 0, 0, 0.1);
+    --primary: #581B98;
+}
+
+
 
 
 .chatbox__support{
@@ -105,10 +116,10 @@ ul {
 
 
 .chatbox {
-    height: 50%;
+    height: 1000;
     margin: auto;
     display: flex;
-    width: 50%;
+    width: 1000;
     padding: 140px;
 }
 
@@ -195,7 +206,7 @@ ul {
 .chatbox__support {
     background: rgb(246, 236, 236);
     height: 450px;
-    width: 800px;
+    width: 1000px;
     box-shadow: 0px 0px 15px rgb(255, 251, 251);
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
