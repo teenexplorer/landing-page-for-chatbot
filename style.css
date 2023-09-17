@@ -10,7 +10,7 @@ body {
     font-family: 'Nunito', sans-serif;
     font-weight: 400;
     font-size: 100%;
-    background: black;
+    background:linear-gradient(#060009ee, #d7066bec);
     /*background: linear-gradient(to right, #a600ff00, #001100ec); */
 }
 
